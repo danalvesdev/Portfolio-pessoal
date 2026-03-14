@@ -103,6 +103,32 @@ span.destaque{
     color: var(--detalhe);
 }
 
-div#projetos{
+#curso-conteiner{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 15px;
+}
+
+div.cursos .foto{
     
+}
+
+div.cursos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--fundo);
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 8px solid var(--fundo-card);
+    transition: border-left 0.5s ease, background 0.5s ease;
+}
+
+div.cursos:hover{
+    background-color: var(--detalhe);
+    border-color: var(--card);
+}
+
+div.curso-ano{
+    font-weight: bold;
 }
