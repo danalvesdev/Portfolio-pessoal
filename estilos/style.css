@@ -106,11 +106,8 @@ span.destaque{
 #curso-conteiner{
     display: flex;
     flex-direction: column-reverse;
+    gap: 20px;
     padding: 15px;
-}
-
-div.cursos .foto{
-    
 }
 
 div.cursos{
@@ -121,7 +118,8 @@ div.cursos{
     padding: 10px;
     border-radius: 10px;
     border-left: 8px solid var(--fundo-card);
-    transition: border-left 0.5s ease, background 0.5s ease;
+    transition: border-left 0.5s ease, background 0.3s ease;
+    cursor: pointer;
 }
 
 div.cursos:hover{
@@ -131,4 +129,14 @@ div.cursos:hover{
 
 div.curso-ano{
     font-weight: bold;
+}
+
+div.titulo p {
+    color: rgba(42, 42, 255, 0.548);
+    font-size: 1.5em;
+}
+
+#curso-conteiner h3{
+    font-weight: bold;
+    font-size: 1.3em;
 }
