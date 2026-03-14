@@ -11,6 +11,7 @@
     --detalhe : #5114A6;
     --letra : #f2f2f2;
     --card : #4CD90B;
+    --letra-destaque : rgb(42, 42, 255, 0.548);
     --fundo-card : #360259;
 }
 
@@ -52,7 +53,7 @@ main{
 section#ficha{
     grid-column: 2;
     flex-flow: column nowrap;
-    margin-top: 25px;
+    margin-top: 15px;
     padding: 15px;
     text-align: justify;
     background-color: rgba(0, 0, 0, 0.349);
@@ -90,6 +91,7 @@ section#ficha #whats{
     text-align: center;
     padding: 10px;
     margin: 20px;
+    margin-left: 25%;
     border-radius: 10px;
     transition: background 0.5s ease, color 0.5s;
 }
@@ -139,4 +141,47 @@ div.titulo p {
 #curso-conteiner h3{
     font-weight: bold;
     font-size: 1.3em;
+}
+
+#projeto-conteiner{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    padding: 15px;
+}
+
+.projeto-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 8px;
+    padding: 15px;
+    background-color: var(--fundo);
+    border-left: 8px solid var(--detalhe);
+    border-radius: 8px;
+    transition: background 0.3s ease, border 0.5s ease;
+}
+
+.projeto-card:hover{
+    background-color: var(--detalhe);
+    border-color: var(--card);
+}
+
+div.info{
+    color: var(--letra-destaque);
+    font-size: 1.3em;
+}
+
+div.ano{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#foto{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
 }
