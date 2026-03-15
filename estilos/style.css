@@ -64,6 +64,8 @@ nav a:hover{
 main{
    display: grid;
    grid-template-columns: auto 90vw auto;
+   padding: 20px;
+   margin-top: 20px;
 }
 
 section#ficha{

@@ -1,0 +1,16 @@
+@media screen and (min-width:768px){
+    main{
+        grid-template-columns: 300px 1fr auto;
+    }
+
+    section#ficha{
+        grid-column: 1 / 2;
+        height: fit-content;
+        position: sticky;
+        top: 55px;
+    }
+
+    section#detalhes{
+        grid-column: 2/3;
+    }
+}
