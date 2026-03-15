@@ -11,7 +11,7 @@
     --detalhe : #5114A6;
     --letra : #f2f2f2;
     --card : #4CD90B;
-    --letra-destaque : rgb(42, 42, 255);
+    --letra-destaque : rgb(0, 0, 255);
     --fundo-card : #360259;
 }
 
@@ -26,7 +26,7 @@ header.conteiner{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
 }
 
 nav > ul{
@@ -35,10 +35,26 @@ nav > ul{
     margin: 5px;
 }
 
-nav li, a{
+nav li{
     text-decoration: none;
     list-style: none;
     font-size: 0.9em;
+}
+
+nav a {
+    background-color: var(--detalhe);
+    font-size: 1.3em;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.5s ease;
+}
+
+nav a:hover{
+    background-color: var(--fundo-card);
+    color: var(--letra);
+    font-weight: bold;
+    padding: 5px;
 }
 
 .corletra{
@@ -67,7 +83,7 @@ section#ficha img#perfil{
   overflow: hidden;
   border-radius: 50%;
   border: 5px solid var(--fundo-card);
-  outline: 5 solid var(--detalhe);
+  outline: 5px solid var(--detalhe);
   display: block;
   margin: auto;
   margin-bottom: 18px;
@@ -116,7 +132,7 @@ div.cursos{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    background-color: var(--fundo);
+    background-color: rgb(21, 4, 22);
     padding: 10px;
     border-radius: 10px;
     border-left: 8px solid var(--fundo-card);
@@ -134,8 +150,9 @@ div.curso-ano{
 }
 
 div.titulo p {
-    color: rgba(42, 42, 255, 0.548);
+    color: rgba(0, 0, 255, 0.767);
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 #curso-conteiner h3{
@@ -164,7 +181,7 @@ div.titulo p {
     flex-direction: column;
     gap: 8px;
     padding: 15px;
-    background-color: var(--fundo);
+    background-color: rgb(21, 4, 22);
     border-left: 8px solid var(--detalhe);
     border-radius: 8px;
     transition: background 0.3s ease, border 0.5s ease;
@@ -176,7 +193,7 @@ div.titulo p {
 }
 
 div.titulo h3{
-    color: var(--letra-destaque);
+    color: rgba(74, 74, 255, 0.795);
     font-size: 1.3em;
 }
 
@@ -188,4 +205,52 @@ div.info{
 div.ano{
     font-size: 1.2em;
     font-weight: bold;
+}
+
+div.info summary{
+    cursor: pointer;
+    text-align: justify;
+}
+
+#hab-conteiner{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+div.hab-card{
+    display: flex;
+    flex-flow: column wrap;
+    width: 350px;
+    height: 120px;
+    gap: 5px;
+    padding: 10px 5px;
+    background-color: rgb(21, 4, 22);
+    color: var(--letra);
+    border: 3px solid var(--fundo-card);
+    border-radius: 8px;
+    border-left: 8px solid var(--detalhe);
+    transition: background 0.3s ease, border 0.5s ease;
+    text-align: center;
+}
+
+div.nivel{
+   font-weight: bold;
+}
+
+div.hab-card:hover{
+    background-color: var(--fundo-card);
+    border-color: var(--card);
+}
+
+footer{
+    background-color: rgba(21, 4, 22, 0.295);
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgba(51, 82, 255, 0.712);
 }
