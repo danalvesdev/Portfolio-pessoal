@@ -11,7 +11,7 @@
     --detalhe : #5114A6;
     --letra : #f2f2f2;
     --card : #4CD90B;
-    --letra-destaque : rgb(42, 42, 255, 0.548);
+    --letra-destaque : rgb(42, 42, 255);
     --fundo-card : #360259;
 }
 
@@ -146,15 +146,22 @@ div.titulo p {
 #projeto-conteiner{
     display: flex;
     flex-direction: column-reverse;
-    gap: 8px;
+    gap: 25px;
     padding: 15px;
+}
+
+#foto{
+    width: 100%;
+    height: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .projeto-card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
     gap: 8px;
     padding: 15px;
     background-color: var(--fundo);
@@ -168,21 +175,17 @@ div.titulo p {
     border-color: var(--card);
 }
 
-div.info{
+div.titulo h3{
     color: var(--letra-destaque);
     font-size: 1.3em;
+}
+
+div.info{
+    color: var(--letra);
+    font-size: 1.2em;
 }
 
 div.ano{
     font-size: 1.2em;
     font-weight: bold;
-}
-
-#foto{
-    width: 100%;
-    height: 150px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 10px;
 }
