@@ -1,4 +1,4 @@
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px){
     main{
         grid-template-columns: 300px 1fr auto;
     }
@@ -11,6 +11,6 @@
     }
 
     section#detalhes{
-        grid-column: 2/3;
+        grid-column: 2 / 3;
     }
 }

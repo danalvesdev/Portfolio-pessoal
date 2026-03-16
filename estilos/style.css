@@ -63,13 +63,13 @@ nav a:hover{
 
 main{
    display: grid;
-   grid-template-columns: auto 90vw auto;
+   grid-template-columns: 90vw;
    padding: 20px;
    margin-top: 20px;
 }
 
 section#ficha{
-    grid-column: 2;
+    grid-column: 1;
     flex-flow: column nowrap;
     margin-top: 15px;
     padding: 15px;
@@ -169,7 +169,7 @@ div.titulo p {
     padding: 15px;
 }
 
-#foto{
+.foto{
     width: 100%;
     height: 150px;
     aspect-ratio: 1/1;
