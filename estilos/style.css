@@ -256,3 +256,7 @@ footer a{
     text-decoration: none;
     color: rgba(51, 82, 255, 0.712);
 }
+
+section[id], #ficha , #projetos{
+    scroll-margin-top: 200px;
+}
