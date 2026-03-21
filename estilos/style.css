@@ -68,6 +68,10 @@ main{
    margin-top: 20px;
 }
 
+section{
+    margin: 10px;
+}
+
 section#ficha{
     grid-column: 1;
     flex-flow: column nowrap;
@@ -209,9 +213,9 @@ div.ano{
     font-weight: bold;
 }
 
-div.info summary{
+details{
     cursor: pointer;
-    text-align: justify;
+    text-align: left;
 }
 
 #hab-conteiner{
