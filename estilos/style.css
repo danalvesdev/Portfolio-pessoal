@@ -182,6 +182,12 @@ div.titulo p {
     border-radius: 10px;
 }
 
+img.foto[src="img/projeto06.png"]{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
 .projeto-card{
     display: flex;
     flex-direction: column;
